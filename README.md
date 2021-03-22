@@ -48,7 +48,7 @@ Here is presented the results and reports from the last experiment
 
 This figure presents the elements freezed by DMs
 
-![Elements freezed by DM](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/b7cbeb2484f55651f266c8bad055a102eec3451e/freezed-results-verification/freezed-by-dm.svg)
+![Elements freezed by DM](https://github.com/otimizes/experimental-package-opla-alm/blob/master/freezed-results-verification/freezed-by-dm-report.zip?raw=true)
 
 [\<View full report\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/freezed-results-verification/freezed-by-dm-report.pdf)
 
@@ -86,7 +86,7 @@ This figure shows the medians of the objective functions
 
 This figure presents the elements freezed by OPLA-ALM
 
-![Elements freezed by OPLA-ALM](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/e32d21e3d6cb2361cdf0d56623df98a16b944a56/quantitative-learning-evaluation/freezed-by-lm.svg)
+![Elements freezed by OPLA-ALM](https://github.com/otimizes/experimental-package-opla-alm/blob/master/freezed-results-verification/freezed-by-dm-report.zip?raw=true)
 
 [\<View full report\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/quantitative-learning-evaluation/freezed-by-lm-report.pdf)
 
@@ -114,7 +114,7 @@ All of the reports from DMs are listed bellow
 
 All of the files from the experiments are described bellow
 
-[\<DM 1\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm1.zip?raw=true), [\<DM 2\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm2.zip?raw=true), [\<DM 3\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm3.zip?raw=true), [\<DM 4\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm4.zip?raw=true), [\<DM 5\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm5.zip?raw=true), [\<DM 6\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm6.zip?raw=true), [\<DM 7\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm7.zip?raw=true), [\<DM 8\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm8.zip?raw=true), [\<DM 9\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm9.zip?raw=true), [\<DM 10\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm10.zip?raw=true), [\<DM 11\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm11.zip?raw=true), [\<DM 12\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool-dm12.zip?raw=true), 
+[\<DM 1\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm1.zip?raw=true), [\<DM 2\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm2.zip?raw=true), [\<DM 3\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm3.zip?raw=true), [\<DM 4\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm4.zip?raw=true), [\<DM 5\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm5.zip?raw=true), [\<DM 6\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm6.zip?raw=true), [\<DM 7\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm7.zip?raw=true), [\<DM 8\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm8.zip?raw=true), [\<DM 9\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm9.zip?raw=true), [\<DM 10\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm10.zip?raw=true), [\<DM 11\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm11.zip?raw=true), [\<DM 12\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/oplatool/oplatool-dm12.zip?raw=true), 
 
 ### Form responses
 
