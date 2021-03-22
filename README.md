@@ -163,3 +163,5 @@ Reports and files
 [\<Corpus\>](https://raw.githubusercontent.com/otimizes/experimental-package-opla-alm/master/iramuteq/corpus.csv)
 
 [\<IRaMuTeQ files\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/iramuteq/corpusoficialorigin_corpus_1.zip)
+
+OBS: If you want to see the personal informations about DMs, create a pull request with your e-mail and we will be in touch. Best Regards.
