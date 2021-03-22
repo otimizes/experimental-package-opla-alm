@@ -48,15 +48,15 @@ Here is presented the results and reports from the last experiment
 
 This figure presents the elements freezed by DMs
 
-![Elements freezed by DM](https://github.com/otimizes/experimental-package-opla-alm/blob/master/freezed-results-verification/freezed-by-dm-report.zip?raw=true)
+[Elements freezed by DM](https://github.com/otimizes/experimental-package-opla-alm/blob/master/freezed-results-verification/freezed-by-dm-report.zip?raw=true)
 
-[\<View full report\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/freezed-results-verification/freezed-by-dm-report.pdf)
+[\<View full report\>](https://github.com/otimizes/experimental-package-opla-alm/blob/master/freezed-results-verification/freezed-by-dm-report.zip?raw=true)
 
 ### Elements by interaction
 
 Number of elements by interaction
 
-![Elements by interaction](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/fc4a2d58aa2206dc69db0a3e8e547493ce5f8dee/quantitative-architectural-elements/elements-by-interaction.svg)
+![Elements by interaction](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/466832d1a51adb66cd6f0ae79c7358e56ceddee1/quantitative-architectural-elements/elements-by-interaction.svg)
 
 [\<Interaction 1 report\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/quantitative-architectural-elements/interaction-1-report.pdf)
 
@@ -68,25 +68,25 @@ Number of elements by interaction
 
 Normalized objective functions
 
-![Normal objective functions](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/fc4a2d58aa2206dc69db0a3e8e547493ce5f8dee/quantitative-architectural-elements/normal-objective-functions.svg)
+![Normal objective functions](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/466832d1a51adb66cd6f0ae79c7358e56ceddee1/quantitative-architectural-elements/normal-objective-functions.svg)
 
 Score and objective functions
 
-![Score and objective functions](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/fc4a2d58aa2206dc69db0a3e8e547493ce5f8dee/quantitative-architectural-elements/score-objective-functions.svg)
+![Score and objective functions](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/466832d1a51adb66cd6f0ae79c7358e56ceddee1/quantitative-architectural-elements/score-objective-functions.svg)
 
 ### Objective function medians
 
 This figure shows the medians of the objective functions
 
-![Median](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/e32d21e3d6cb2361cdf0d56623df98a16b944a56/quantitative-learning-evaluation/median-elements.svg)
+![Median](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/466832d1a51adb66cd6f0ae79c7358e56ceddee1/quantitative-learning-evaluation/median-elements.svg)
 
-[\<View full report\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/quantitative-learning-evaluation/medial-all-report.pdf)
+[\<View full report\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/quantitative-learning-evaluation/medial-all-report.zip)
 
 ### Elements freezed By OPLA-ALM
 
 This figure presents the elements freezed by OPLA-ALM
 
-![Elements freezed by OPLA-ALM](https://github.com/otimizes/experimental-package-opla-alm/blob/master/freezed-results-verification/freezed-by-dm-report.zip?raw=true)
+[Elements freezed by OPLA-ALM](https://github.com/otimizes/experimental-package-opla-alm/blob/master/freezed-results-verification/freezed-by-dm-report.zip?raw=true)
 
 [\<View full report\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/quantitative-learning-evaluation/freezed-by-lm-report.pdf)
 
@@ -94,15 +94,15 @@ This figure presents the elements freezed by OPLA-ALM
 
 A kappa of 1 indicates perfect agreement, whereas a kappa of 0 indicates agree- ment equivalent to chance.
 
-![Kappa](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/e32d21e3d6cb2361cdf0d56623df98a16b944a56/quantitative-learning-evaluation/kappa.svg)
+![Kappa](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/466832d1a51adb66cd6f0ae79c7358e56ceddee1/quantitative-learning-evaluation/kappa.svg)
 
 ### Machine Learning Metrics
 
 This figure shows the accuracy and errors from the machine learning algorithm
 
-![Machine Learning Metrics](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/e32d21e3d6cb2361cdf0d56623df98a16b944a56/quantitative-learning-evaluation/learning-metrics.svg)
+![Machine Learning Metrics](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/466832d1a51adb66cd6f0ae79c7358e56ceddee1/quantitative-learning-evaluation/learning-metrics.svg)
 
-[\<View full report\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/quantitative-learning-evaluation/learning-metrics-report.pdf)
+[\<View full report\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/quantitative-learning-evaluation/learning-metrics-report.zip)
 
 ### Full reports from DMs
 
@@ -136,7 +136,7 @@ These figures represent the informations obtained through the forms filled in by
 
 ![works](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/form-responses/works.png)
 
-[\<Full report\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/form-responses/full-report.pdf)
+[\<Full report\>](https://media.githubusercontent.com/media/otimizes/experimental-package-opla-alm/master/form-responses/full-report.zip)
 
 ### Textual Analysis
 
