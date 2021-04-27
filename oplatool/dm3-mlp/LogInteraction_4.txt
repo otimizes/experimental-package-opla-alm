@@ -1,0 +1,4816 @@
+TEMP_0agm
+Id: 0
+Objectives: featureDriven = 711.0, aclass = 17.0, coe = 28.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, AnimationLoopMgr, Package4Mgr, Package229Ctrl, Package354Ctrl], qtdPackages: 12, qtdClasses: 28, qtdInterfaces: 13, qtdClassesSemAttr: 7, qtdFreezedElements: 10, 
+freezedElements: [GameBoardGUI:klass, IGameBoardData:interface, Match:klass, IInstallGame:interface, IExitGame:interface, PlayGameGUI:klass, GameGUI:klass, InitializationMgt:interface, AnimationLoppMgr:klass, BowlingGame:klass], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 13, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 45
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, stopAnimation]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, checkPassword, updateLastTimeSaved, checkLogin]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [loadGame, saveGame, viewTopScores, saveScore]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, addMovabalePiece, checkForCollision, run, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, getGameOver, alreadyCollision, handleTick, StartMovement]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfSets, setPoints] 
+           methods: [saveGame, saveScore, loadGame, viewTopScores]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 6 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, collideWith, hitbyPuck, die, setSaveData]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, getSaveData, setSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [loadGame, saveScore, saveGame, viewTopScores]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [saveScore, saveGame, viewTopScores, getGame, loadGame, exitGame]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+
+Previous User Evaluation: 0
+Best Clusters: [Trade-off]
+TEMP_1agm
+Id: 1
+Objectives: featureDriven = 692.0, aclass = 20.0, coe = 26.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, Package321Ctrl, InitializeMgr, Package27Ctrl, Package546Mgr], qtdPackages: 11, qtdClasses: 28, qtdInterfaces: 13, qtdClassesSemAttr: 7, qtdFreezedElements: 3, 
+freezedElements: [IGameBoardData:interface, IInstallGame:interface, Interface404:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 11, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 42
+    Classes: 
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, move, paint, setDirection, startMoving]
+       Class63 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [saveGame, loadGame, saveScore, viewTopScores]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [gameCode] 
+           methods: [loadGame, exitGame, saveScore, saveGame, getGame, startAnimation, viewTopScores]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, setFinalScore, endMatch, getFinalScore, setPartialScore]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfBricks, numRows, , numOfBricksPerRow, numLeft, pile] 
+           methods: [setSaveData, getSaveData, paint, getBoundingBox, paintBricks, collideWith]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingBowling, score, scoreRankingBrickles, scoreRankingPong] 
+           methods: [incScore, resetScore, updateScoreRanking]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, run, addMovabalePiece, checkForCollision, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, addStationaryPiece, exitGame, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 6 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, gameCode, setPoints] 
+           methods: [viewTopScores, loadGame, saveScore, saveGame]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, setSaveData, getSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numbersOfBalls] 
+           methods: [viewTopScores, saveGame, saveScore, loadGame]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [collideWith, getSaveData, paint, hitbyPuck, setSaveData, die]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [collideWith, absorb, paint]
+
+Previous User Evaluation: 0
+Best Clusters: [Trade-off]
+TEMP_2agm
+Id: 2
+Objectives: featureDriven = 681.0, aclass = 16.0, coe = 29.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, AnimationLoopMgr, Package73Mgr, Package231Ctrl, Package316Ctrl, Package559Ctrl], qtdPackages: 13, qtdClasses: 29, qtdInterfaces: 16, qtdClassesSemAttr: 7, qtdFreezedElements: 4, 
+freezedElements: [GameBoardGUI:klass, IGameBoardData:interface, IInstallGame:interface, InitializationMgt:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 10, 
+getAllAssociations: 6, 
+getAllGeneralizations: 12, 
+getAllRelationships: 40
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, stopAnimation]
+       Score 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [score] 
+           methods: [resetScore, incScore]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       Class34 
+           qtdAttributes: 9 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [scoreRankingPong, heigherScoreBrickles, login, scoreRankingBrickles, scoreRankingBowling, heigherScoreBowling, heigherScorePong, password, name] 
+           methods: [updateScoreRanking, setHeigherScore, checkPassword, checkLogin]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       Class23 
+           qtdAttributes: 7 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [lastTimePlayedBowling, dateBowlingScore, lastTimeSavedBrickles, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [updateDateScore, updateLastTimePlayed, updateLastTimeSaved]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [loadGame, saveGame, viewTopScores, saveScore]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfSets, setPoints] 
+           methods: [saveGame, saveScore, loadGame, viewTopScores]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, addMovabalePiece, checkForCollision, run, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, getGameOver, alreadyCollision, handleTick, StartMovement]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [loadGame, saveScore, saveGame, viewTopScores]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, getSaveData, setSaveData, collideWith]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, collideWith, hitbyPuck, die, setSaveData]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [saveScore, saveGame, viewTopScores, getGame, loadGame, exitGame]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+
+Previous User Evaluation: 0
+Best Clusters: [Trade-off]
+TEMP_3agm
+Id: 3
+Objectives: featureDriven = 686.0, aclass = 22.0, coe = 28.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, AnimationLoopMgr, Package73Mgr, Package231Ctrl, Package316Ctrl], qtdPackages: 12, qtdClasses: 29, qtdInterfaces: 16, qtdClassesSemAttr: 7, qtdFreezedElements: 5, 
+freezedElements: [IGameBoardData:interface, ISaveScore:interface, IPlayBowling:interface, InitializationMgt:interface, Interface174:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 10, 
+getAllAssociations: 6, 
+getAllGeneralizations: 12, 
+getAllRelationships: 40
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, stopAnimation]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Score 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [score] 
+           methods: [resetScore, incScore]
+       Class34 
+           qtdAttributes: 9 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [scoreRankingPong, heigherScoreBrickles, login, scoreRankingBrickles, scoreRankingBowling, heigherScoreBowling, heigherScorePong, password, name] 
+           methods: [updateScoreRanking, setHeigherScore, checkPassword, checkLogin]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       Class23 
+           qtdAttributes: 7 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [lastTimePlayedBowling, dateBowlingScore, lastTimeSavedBrickles, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [updateDateScore, updateLastTimePlayed, updateLastTimeSaved]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [loadGame, saveGame, viewTopScores, saveScore]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfSets, setPoints] 
+           methods: [saveGame, saveScore, loadGame, viewTopScores]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, addMovabalePiece, checkForCollision, run, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, getGameOver, alreadyCollision, handleTick, StartMovement]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [loadGame, saveScore, saveGame, viewTopScores]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, getSaveData, setSaveData, collideWith]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [saveScore, saveGame, viewTopScores, getGame, loadGame, exitGame]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, collideWith, hitbyPuck, die, setSaveData]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+
+Previous User Evaluation: 0
+Best Clusters: [Trade-off]
+TEMP_4agm
+Id: 4
+Objectives: featureDriven = 705.0, aclass = 25.0, coe = 25.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, Package306Mgr, Package583Mgr], qtdPackages: 9, qtdClasses: 28, qtdInterfaces: 14, qtdClassesSemAttr: 7, qtdFreezedElements: 8, 
+freezedElements: [GameBoardGUI:klass, IGameBoardData:interface, InitializationMgt:interface, InitializeMgr:klass, ISaveGame:interface, IUninstallgame:interface, PlayGameGUI:klass, GameGUI:klass], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 12, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 44
+    Classes: 
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfTruns, gameCode] 
+           methods: [saveScore, loadGame, saveGame, viewTopScores]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, initialize]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, checkPassword, updateLastTimeSaved, checkLogin]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, setPoints, gameCode] 
+           methods: [viewTopScores, saveGame, loadGame, saveScore]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, paint, setScore, setSpeed, run, checkForCollision, addMovabalePiece, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, addStationaryPiece, exitGame, buildGameBoard, getScore, removeMovablePiece, getGameOver, alreadyCollision, handleTick, StartMovement]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [viewTopScores, getGame, saveGame, loadGame, exitGame, saveScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Class73 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [saveScore, viewTopScores, loadGame, saveGame]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, setSaveData, getSaveData, collideWith]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, hitbyPuck, collideWith, die, setSaveData]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+
+Previous User Evaluation: 0
+Best Clusters: [Trade-off]
+TEMP_5agm
+Id: 5
+Objectives: featureDriven = 656.0, aclass = 11.0, coe = 32.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, AnimationLoopMgr, Package27Ctrl, Package407Ctrl, Package489Mgr, Package575Mgr, Package593Ctrl], qtdPackages: 14, qtdClasses: 28, qtdInterfaces: 15, qtdClassesSemAttr: 7, qtdFreezedElements: 0, 
+freezedElements: [], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 13, 
+getAllAssociations: 9, 
+getAllGeneralizations: 12, 
+getAllRelationships: 47
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       GameBoard 
+           qtdAttributes: 8 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 20 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, menu, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, addMovabalePiece, checkForCollision, run, setMenu, removeStationaryPiece, resetList, tick, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, getGameOver, alreadyCollision, handleTick, StartMovement]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, collideWith, hitbyPuck, die, setSaveData]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, checkPassword, updateLastTimeSaved, checkLogin]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [loadGame, saveGame, viewTopScores, saveScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfSets, setPoints] 
+           methods: [saveGame, saveScore, loadGame, viewTopScores]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       Velocity 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [dy, speed, dx, direction, speed, moving] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight, setSpeed, getSpeed, stopMovement]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, getSaveData, setSaveData, collideWith]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [gameCode] 
+           methods: [saveScore, saveGame, viewTopScores, getGame, loadGame, exitGame, startAnimation]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [loadGame, saveScore, saveGame, viewTopScores]
+
+Previous User Evaluation: 0
+Best Clusters: [Trade-off, featureDriven, aclass]
+TEMP_6agm
+Id: 6
+Objectives: featureDriven = 688.0, aclass = 18.0, coe = 28.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, Package595Ctrl, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, Package233Mgr, Package27Ctrl, AnimationLoopMgr], qtdPackages: 12, qtdClasses: 28, qtdInterfaces: 13, qtdClassesSemAttr: 7, qtdFreezedElements: 0, 
+freezedElements: [], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 12, 
+getAllAssociations: 8, 
+getAllGeneralizations: 12, 
+getAllRelationships: 44
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [saveGame, loadGame, saveScore, viewTopScores]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [gameCode] 
+           methods: [loadGame, exitGame, saveScore, saveGame, getGame, startAnimation, viewTopScores]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, setFinalScore, endMatch, getFinalScore, setPartialScore]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfBricks, numRows, , numOfBricksPerRow, numLeft, pile] 
+           methods: [setSaveData, getSaveData, paint, getBoundingBox, paintBricks, collideWith]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, checkForCollision, addMovabalePiece, run, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 6 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, gameCode, setPoints] 
+           methods: [viewTopScores, loadGame, saveScore, saveGame]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [paint, moveLeft, moveRight, getSaveData, setSaveData, collideWith]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numbersOfBalls] 
+           methods: [viewTopScores, saveGame, saveScore, loadGame]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [collideWith, paint, getSaveData, hitbyPuck, setSaveData, die]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off]
+TEMP_7agm
+Id: 7
+Objectives: featureDriven = 641.0, aclass = 15.0, coe = 30.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, Package321Ctrl, Package600Ctrl, InitializeMgr, Package27Ctrl, AnimationLoopMgr], qtdPackages: 12, qtdClasses: 28, qtdInterfaces: 13, qtdClassesSemAttr: 7, qtdFreezedElements: 0, 
+freezedElements: [], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 12, 
+getAllAssociations: 8, 
+getAllGeneralizations: 12, 
+getAllRelationships: 44
+    Classes: 
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [icon, localization, name] 
+           methods: [overLaps, paint, collideWith]
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [lastPosition, currentVelocity, isMoving] 
+           methods: [move, paint, moving, collideWith, stopMoving, startMoving, setDirection]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [saveGame, loadGame, saveScore, viewTopScores]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [gameCode] 
+           methods: [loadGame, exitGame, saveScore, saveGame, getGame, startAnimation, viewTopScores]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, collideWith, moveRight, getSaveData, setSaveData, paint]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfBricks, numRows, , numOfBricksPerRow, numLeft, pile] 
+           methods: [setSaveData, getSaveData, paint, getBoundingBox, paintBricks, collideWith]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingBowling, score, scoreRankingBrickles, scoreRankingPong] 
+           methods: [incScore, resetScore, updateScoreRanking]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 6 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, gameCode, setPoints] 
+           methods: [viewTopScores, loadGame, saveScore, saveGame]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numbersOfBalls] 
+           methods: [viewTopScores, saveGame, saveScore, loadGame]
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [setFinalScore, endMatch, setPartialScore, startMatch, getFinalScore, getPartialScore]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [collideWith, getSaveData, paint, hitbyPuck, setSaveData, die]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isDead, puckDimension] 
+           methods: [delete, setDirection, paint, getSaveData, setSaveData, move, collideWith]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [stationaryComponents, display, moving, menu, movableComponents, collisionList, gameOver, score, image, speed] 
+           methods: [checkForCollision, setScore, run, getMenu, initializeCollisionList, paint, StartMovement, removeMovablePiece, removeStationaryPiece, addMovabalePiece, tick, alreadyCollision, addStationaryPiece, exitGame, stopMovement, buildGameBoard, resetList, setSpeed, handleTick, getScore, setMenu, getGameOver, getSpeed]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off, featureDriven, aclass]
+TEMP_8agm
+Id: 8
+Objectives: featureDriven = 763.0, aclass = 33.0, coe = 24.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, Package492Mgr], qtdPackages: 8, qtdClasses: 28, qtdInterfaces: 14, qtdClassesSemAttr: 7, qtdFreezedElements: 10, 
+freezedElements: [GameBoardGUI:klass, Velocity:klass, Match:klass, InitializeMgr:klass, IPlayPong:interface, IInstallGame:interface, IUninstallgame:interface, IExitGame:interface, PlayGameGUI:klass, GameGUI:klass], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 12, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 44
+    Classes: 
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [viewTopScores, getGame, saveGame, loadGame, exitGame, saveScore]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, setPoints, gameCode] 
+           methods: [viewTopScores, saveGame, loadGame, saveScore]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, initialize]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, checkPassword, updateLastTimeSaved, checkLogin]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfTruns, gameCode] 
+           methods: [saveScore, loadGame, saveGame, viewTopScores]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, paint, setScore, setSpeed, run, checkForCollision, addMovabalePiece, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, addStationaryPiece, exitGame, buildGameBoard, getScore, removeMovablePiece, getGameOver, alreadyCollision, handleTick, StartMovement]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Class56 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, setSaveData, getSaveData, collideWith]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, hitbyPuck, collideWith, die, setSaveData]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [saveScore, viewTopScores, loadGame, saveGame]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+
+Previous User Evaluation: 3
+Best Clusters: [Trade-off, coe]
+TEMP_9agm
+Id: 9
+Objectives: featureDriven = 732.0, aclass = 18.0, coe = 28.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, Package233Mgr, Package27Ctrl, AnimationLoopMgr], qtdPackages: 11, qtdClasses: 28, qtdInterfaces: 14, qtdClassesSemAttr: 7, qtdFreezedElements: 9, 
+freezedElements: [GameBoardGUI:klass, Score:klass, IGameBoardData:interface, Match:klass, IInstallGame:interface, IExitGame:interface, PlayGameGUI:klass, GameGUI:klass, IAnimationLoopMgt:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 13, 
+getAllAssociations: 8, 
+getAllGeneralizations: 12, 
+getAllRelationships: 46
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [saveGame, loadGame, saveScore, viewTopScores]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [gameCode] 
+           methods: [loadGame, exitGame, saveScore, saveGame, getGame, startAnimation, viewTopScores]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfBricks, numRows, , numOfBricksPerRow, numLeft, pile] 
+           methods: [setSaveData, getSaveData, paint, getBoundingBox, paintBricks, collideWith]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, run, addMovabalePiece, checkForCollision, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, addStationaryPiece, exitGame, buildGameBoard, getScore, removeMovablePiece, getGameOver, alreadyCollision, handleTick, StartMovement]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, gameCode, setPoints] 
+           methods: [viewTopScores, loadGame, saveScore, saveGame]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, setSaveData, getSaveData, collideWith]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numbersOfBalls] 
+           methods: [saveGame, viewTopScores, saveScore, loadGame]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [collideWith, paint, getSaveData, hitbyPuck, setSaveData, die]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [collideWith, absorb, paint]
+
+Previous User Evaluation: 3
+Best Clusters: [Trade-off]
+TEMP_10agm
+Id: 10
+Objectives: featureDriven = 735.0, aclass = 21.0, coe = 27.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, Package321Ctrl, InitializeMgr, Package27Ctrl, AnimationLoopMgr], qtdPackages: 11, qtdClasses: 28, qtdInterfaces: 13, qtdClassesSemAttr: 7, qtdFreezedElements: 6, 
+freezedElements: [GameBoardGUI:klass, IGameBoardData:interface, IInstallGame:interface, PlayGameGUI:klass, BricklesGame:klass, IAnimationLoopMgt:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 12, 
+getAllAssociations: 8, 
+getAllGeneralizations: 12, 
+getAllRelationships: 44
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, move, paint, setDirection, startMoving]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [saveGame, loadGame, saveScore, viewTopScores]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [gameCode] 
+           methods: [loadGame, exitGame, saveScore, saveGame, getGame, startAnimation, viewTopScores]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, setFinalScore, endMatch, getFinalScore, setPartialScore]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfBricks, numRows, , numOfBricksPerRow, numLeft, pile] 
+           methods: [setSaveData, getSaveData, paint, getBoundingBox, paintBricks, collideWith]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingBowling, score, scoreRankingBrickles, scoreRankingPong] 
+           methods: [incScore, resetScore, updateScoreRanking]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, run, addMovabalePiece, checkForCollision, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, addStationaryPiece, exitGame, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 6 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, gameCode, setPoints] 
+           methods: [viewTopScores, loadGame, saveScore, saveGame]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, setSaveData, getSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numbersOfBalls] 
+           methods: [viewTopScores, saveGame, saveScore, loadGame]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [collideWith, getSaveData, paint, hitbyPuck, setSaveData, die]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [collideWith, absorb, paint]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off]
+TEMP_11agm
+Id: 11
+Objectives: featureDriven = 713.0, aclass = 23.0, coe = 27.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, Package229Ctrl, InitializeMgr, AnimationLoopMgr, Package4Mgr], qtdPackages: 11, qtdClasses: 28, qtdInterfaces: 13, qtdClassesSemAttr: 7, qtdFreezedElements: 7, 
+freezedElements: [GameBoardGUI:klass, IGameBoardData:interface, IInstallGame:interface, IUninstallgame:interface, IExitGame:interface, PlayGameGUI:klass, InitializationMgt:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 13, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 45
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, stopAnimation]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfTruns, gameCode] 
+           methods: [viewTopScores, loadGame, saveScore, saveGame]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, move, paint, setDirection, startMoving]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingBrickles, scoreRankingPong, score, scoreRankingBowling] 
+           methods: [resetScore, updateScoreRanking, incScore]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, checkPassword, updateLastTimeSaved, checkLogin]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, setFinalScore, endMatch, getFinalScore, setPartialScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [setPoints, gameCode, numberOfSets] 
+           methods: [loadGame, viewTopScores, saveScore, saveGame]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, checkForCollision, run, addMovabalePiece, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, addStationaryPiece, exitGame, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 6 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [saveGame, viewTopScores, loadGame, saveScore]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [paint, moveLeft, moveRight, setSaveData, getSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, hitbyPuck, collideWith, die, setSaveData]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [loadGame, viewTopScores, exitGame, saveScore, saveGame, getGame]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off]
+TEMP_12agm
+Id: 12
+Objectives: featureDriven = 758.0, aclass = 28.0, coe = 26.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, AnimationLoopMgr], qtdPackages: 9, qtdClasses: 28, qtdInterfaces: 14, qtdClassesSemAttr: 7, qtdFreezedElements: 7, 
+freezedElements: [IGameBoardData:interface, Match:klass, PongGame:klass, IUninstallgame:interface, IExitGame:interface, GameGUI:klass, InitializationMgt:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 14, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 47
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, stopAnimation]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [saveScore, getGame, viewTopScores, saveGame, loadGame, exitGame]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfSets, setPoints] 
+           methods: [saveScore, saveGame, loadGame, viewTopScores]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, setFinalScore, endMatch, getFinalScore, setPartialScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [loadGame, saveScore, saveGame, viewTopScores]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, paint, setScore, setSpeed, run, addMovabalePiece, checkForCollision, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, addStationaryPiece, exitGame, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [loadGame, saveGame, viewTopScores, saveScore]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [paint, moveLeft, moveRight, getSaveData, setSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, collideWith, hitbyPuck, die, setSaveData]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off, coe]
+TEMP_13agm
+Id: 13
+Objectives: featureDriven = 733.0, aclass = 24.0, coe = 28.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, Package222Mgr, AnimationLoopMgr, Package4Mgr], qtdPackages: 11, qtdClasses: 28, qtdInterfaces: 15, qtdClassesSemAttr: 7, qtdFreezedElements: 7, 
+freezedElements: [GameBoardGUI:klass, IGameBoardData:interface, ISaveGame:interface, IInstallGame:interface, IUninstallgame:interface, IExitGame:interface, InitializationMgt:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 14, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 48
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, stopAnimation]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfTruns, gameCode] 
+           methods: [viewTopScores, loadGame, saveScore, saveGame]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, setFinalScore, endMatch, getFinalScore, setPartialScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [setPoints, gameCode, numberOfSets] 
+           methods: [loadGame, viewTopScores, saveScore, saveGame]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, checkForCollision, run, addMovabalePiece, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [saveGame, viewTopScores, loadGame, saveScore]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, getSaveData, setSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, collideWith, hitbyPuck, die, setSaveData]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [loadGame, viewTopScores, exitGame, saveScore, saveGame, getGame]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off]
+TEMP_14agm
+Id: 14
+Objectives: featureDriven = 756.0, aclass = 24.0, coe = 29.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, Package36Mgr, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, AnimationLoopMgr], qtdPackages: 10, qtdClasses: 28, qtdInterfaces: 14, qtdClassesSemAttr: 7, qtdFreezedElements: 9, 
+freezedElements: [GameBoardGUI:klass, IGameBoardData:interface, ISaveGame:interface, IUninstallgame:interface, IExitGame:interface, GameGUI:klass, InitializeMgr:klass, InitializationMgt:interface, IAnimationLoopMgt:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 14, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 48
+    Classes: 
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [loadGame, viewTopScores, saveScore, saveGame]
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, stopAnimation]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, move, paint, setDirection, startMoving]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [getGame, viewTopScores, exitGame, saveScore, saveGame, loadGame]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, collideWith, paintBricks, getSaveData]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, setFinalScore, endMatch, getFinalScore, setPartialScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, run, checkForCollision, addMovabalePiece, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [setPoints, gameCode, numberOfSets] 
+           methods: [loadGame, saveGame, saveScore, viewTopScores]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [paint, moveLeft, moveRight, getSaveData, setSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [saveGame, viewTopScores, saveScore, loadGame]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, collideWith, hitbyPuck, die, setSaveData]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off]
+TEMP_15agm
+Id: 15
+Objectives: featureDriven = 802.0, aclass = 34.0, coe = 25.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, AnimationLoopMgr], qtdPackages: 8, qtdClasses: 28, qtdInterfaces: 14, qtdClassesSemAttr: 7, qtdFreezedElements: 12, 
+freezedElements: [GameBoardGUI:klass, Velocity:klass, IGameBoardData:interface, Match:klass, InitializationMgt:interface, InitializeMgr:klass, ISaveGame:interface, IInstallGame:interface, IUninstallgame:interface, IExitGame:interface, PlayGameGUI:klass, GameGUI:klass], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 13, 
+getAllAssociations: 8, 
+getAllGeneralizations: 12, 
+getAllRelationships: 46
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [viewTopScores, getGame, saveGame, loadGame, exitGame, saveScore]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, setPoints, gameCode] 
+           methods: [viewTopScores, saveGame, loadGame, saveScore]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, initialize]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, checkPassword, updateLastTimeSaved, checkLogin]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfTruns, gameCode] 
+           methods: [saveScore, loadGame, saveGame, viewTopScores]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, paint, setScore, setSpeed, run, checkForCollision, addMovabalePiece, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, addStationaryPiece, exitGame, buildGameBoard, getScore, removeMovablePiece, getGameOver, alreadyCollision, handleTick, StartMovement]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, setSaveData, getSaveData, collideWith]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, hitbyPuck, collideWith, die, setSaveData]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [saveScore, viewTopScores, loadGame, saveGame]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+
+Previous User Evaluation: 3
+Best Clusters: [Trade-off, coe]
+TEMP_16agm
+Id: 16
+Objectives: featureDriven = 784.0, aclass = 28.0, coe = 28.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, AnimationLoopMgr], qtdPackages: 9, qtdClasses: 28, qtdInterfaces: 14, qtdClassesSemAttr: 7, qtdFreezedElements: 0, 
+freezedElements: [], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 14, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 48
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, stopAnimation]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [saveScore, saveGame, getGame, viewTopScores, loadGame, exitGame]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfSets, setPoints] 
+           methods: [saveScore, saveGame, loadGame, viewTopScores]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numLeft, numRows, , numberOfBricks, pile, numOfBricksPerRow] 
+           methods: [paint, setSaveData, getBoundingBox, paintBricks, collideWith, getSaveData]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [loadGame, saveScore, viewTopScores, saveGame]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, paint, setScore, setSpeed, run, checkForCollision, addMovabalePiece, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, addStationaryPiece, exitGame, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [loadGame, saveGame, viewTopScores, saveScore]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [paint, moveLeft, moveRight, setSaveData, getSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [paint, getSaveData, hitbyPuck, collideWith, die, setSaveData]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off, coe]
+TEMP_17agm
+Id: 17
+Objectives: featureDriven = 750.0, aclass = 22.0, coe = 27.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, Package27Ctrl, AnimationLoopMgr], qtdPackages: 10, qtdClasses: 28, qtdInterfaces: 14, qtdClassesSemAttr: 7, qtdFreezedElements: 5, 
+freezedElements: [IGameBoardData:interface, ISaveGame:interface, IInstallGame:interface, IUninstallgame:interface, IAnimationLoopMgt:interface], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 13, 
+getAllAssociations: 8, 
+getAllGeneralizations: 12, 
+getAllRelationships: 46
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [saveGame, loadGame, saveScore, viewTopScores]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [gameCode] 
+           methods: [loadGame, exitGame, saveScore, saveGame, getGame, startAnimation, viewTopScores]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, checkPassword, updateLastTimeSaved, checkLogin]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfBricks, numRows, , numOfBricksPerRow, numLeft, pile] 
+           methods: [setSaveData, getSaveData, paint, getBoundingBox, paintBricks, collideWith]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, setScore, paint, setSpeed, checkForCollision, run, addMovabalePiece, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, gameCode, setPoints] 
+           methods: [viewTopScores, loadGame, saveScore, saveGame]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, setSaveData, getSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numbersOfBalls] 
+           methods: [viewTopScores, saveGame, saveScore, loadGame]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [collideWith, paint, getSaveData, hitbyPuck, setSaveData, die]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [collideWith, absorb, paint]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off]
+TEMP_18agm
+Id: 18
+Objectives: featureDriven = 756.0, aclass = 22.0, coe = 27.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, Package27Ctrl, AnimationLoopMgr], qtdPackages: 10, qtdClasses: 28, qtdInterfaces: 14, qtdClassesSemAttr: 7, qtdFreezedElements: 0, 
+freezedElements: [], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 14, 
+getAllAssociations: 7, 
+getAllGeneralizations: 12, 
+getAllRelationships: 47
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [startAnimation, stopAnimation]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [gameCode] 
+           methods: [saveScore, saveGame, viewTopScores, getGame, loadGame, exitGame]
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfSets, setPoints] 
+           methods: [saveScore, saveGame, loadGame, viewTopScores]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numbersOfBalls, gameCode] 
+           methods: [loadGame, saveScore, viewTopScores, saveGame]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfBricks, numRows, , numOfBricksPerRow, numLeft, pile] 
+           methods: [setSaveData, getSaveData, paint, getBoundingBox, paintBricks, collideWith]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingRight, isHeadingLeft]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, paint, setScore, setSpeed, run, checkForCollision, addMovabalePiece, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [loadGame, saveGame, viewTopScores, saveScore]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [paint, moveLeft, moveRight, getSaveData, setSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [collideWith, getSaveData, paint, hitbyPuck, setSaveData, die]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, collideWith, paint]
+
+Previous User Evaluation: 3
+Best Clusters: [Trade-off]
+TEMP_19agm
+Id: 19
+Objectives: featureDriven = 749.0, aclass = 22.0, coe = 28.0,
+Metrics: [featureDriven, aclass, coe]
+Info: Packages: [GameBoardGUI, GameBoardCtrl, GameMgr, GameBoardMgr, Package367Mgr, GameCtrl, PlayGameGUI, GameGUI, InitializeMgr, Package27Ctrl, AnimationLoopMgr], qtdPackages: 11, qtdClasses: 28, qtdInterfaces: 15, qtdClassesSemAttr: 7, qtdFreezedElements: 11, 
+freezedElements: [GameBoardGUI:klass, Score:klass, IGameBoardData:interface, Match:klass, ISaveGame:interface, IInstallGame:interface, IUninstallgame:interface, IExitGame:interface, PlayGameGUI:klass, InitializeMgr:klass, BowlingGame:klass], 
+qtdAggregation: 1, 
+getAllCompositions: 2, 
+getAllDependencies: 13, 
+getAllAssociations: 8, 
+getAllGeneralizations: 12, 
+getAllRelationships: 46
+    Classes: 
+       AnimationLoppMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [stopAnimation]
+       Score 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [scoreRankingPong, scoreRankingBrickles, scoreRankingBowling, score] 
+           methods: [updateScoreRanking, resetScore, incScore]
+       StationarySprite 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [] 
+           methods: []
+       MovableSprites 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [isMoving, currentVelocity, lastPosition] 
+           methods: [stopMoving, moving, collideWith, paint, move, setDirection, startMoving]
+       Sprit 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 2 
+           qtdConcerns: 5 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [name, localization, icon] 
+           methods: [paint, overLaps, collideWith]
+       BowlingGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numberOfTruns] 
+           methods: [saveGame, loadGame, saveScore, viewTopScores]
+       Game 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [gameCode] 
+           methods: [loadGame, exitGame, saveScore, saveGame, startAnimation, getGame, viewTopScores]
+       Player 
+           qtdAttributes: 13 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [heigherScoreBrickles, lastTimePlayedBowling, lastTimeSavedBrickles, password, name, login, dateBowlingScore, heigherScoreBowling, heigherScorePong, datePongScore, lastTimePlayedBrickles, lastTimePlayedPong, lastTimeSavedPong] 
+           methods: [setHeigherScore, updateDateScore, updateLastTimePlayed, updateLastTimeSaved, checkPassword, checkLogin]
+       GameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [att8] 
+           methods: [exit, install, save]
+       GameBoardMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 2 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr5] 
+           methods: []
+       Match 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfMatches] 
+           methods: [getPartialScore, startMatch, endMatch, setFinalScore, getFinalScore, setPartialScore]
+       BrickPile 
+           qtdAttributes: 6 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [numberOfBricks, numRows, , numOfBricksPerRow, numLeft, pile] 
+           methods: [setSaveData, getSaveData, paint, getBoundingBox, paintBricks, collideWith]
+       Puck 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 7 
+           attributes: [puckDimension, isDead] 
+           methods: [setDirection, delete, getSaveData, move, collideWith, setSaveData, paint]
+       Floor 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [absorb, paint, collideWidth]
+       Velocity 
+           qtdAttributes: 4 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [dy, speed, dx, direction] 
+           methods: [isHeadingUp, isHeadingDown, isHeadingLeft, isHeadingRight]
+       GameBoard 
+           qtdAttributes: 10 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 23 
+           attributes: [collisionList, movableComponents, image, display, stationaryComponents, speed, menu, moving, score, gameOver] 
+           methods: [initializeCollisionList, getMenu, paint, setScore, setSpeed, run, addMovabalePiece, checkForCollision, getSpeed, setMenu, removeStationaryPiece, resetList, tick, stopMovement, exitGame, addStationaryPiece, buildGameBoard, getScore, removeMovablePiece, alreadyCollision, getGameOver, handleTick, StartMovement]
+       GameBoardCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr10] 
+           methods: []
+       PlayGameGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [attr6] 
+           methods: [play, config, exit]
+       GameCtrl 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 7 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [nameAttr1] 
+           methods: []
+       PongGame 
+           qtdAttributes: 3 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [numberOfSets, gameCode, setPoints] 
+           methods: [viewTopScores, loadGame, saveScore, saveGame]
+       Ceiling 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [] 
+           methods: [collideWith, paint]
+       GameMgr 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 0 
+           attributes: [attr7] 
+           methods: []
+       Paddle 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [] 
+           methods: [moveLeft, paint, moveRight, getSaveData, setSaveData, collideWith]
+       InitializeMgr 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 1 
+           qtdAssociations: 0 
+           qtdMethods: 1 
+           attributes: [] 
+           methods: [initialize]
+       BricklesGame 
+           qtdAttributes: 2 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 3 
+           qtdAssociations: 0 
+           qtdMethods: 4 
+           attributes: [gameCode, numbersOfBalls] 
+           methods: [saveGame, viewTopScores, saveScore, loadGame]
+       Brick 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 6 
+           attributes: [isBroken] 
+           methods: [collideWith, getSaveData, paint, hitbyPuck, setSaveData, die]
+       GameBoardGUI 
+           qtdAttributes: 1 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 0 
+           qtdAssociations: 0 
+           qtdMethods: 2 
+           attributes: [Attr4] 
+           methods: [saveScore, checkScore]
+       Wall 
+           qtdAttributes: 0 
+           qtdAbstractsMethods: 0 
+           qtdConcerns: 4 
+           qtdAssociations: 0 
+           qtdMethods: 3 
+           attributes: [] 
+           methods: [collideWith, absorb, paint]
+
+Previous User Evaluation: 4
+Best Clusters: [Trade-off]

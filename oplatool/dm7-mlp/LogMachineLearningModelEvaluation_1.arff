@@ -1,0 +1,115 @@
+--> Architectural Evaluation <------------------------------------- 
+Architecture Error: 0.10679611650485436
+Architecture Summary: 
+Correctly Classified Instances          92               89.3204 %
+Incorrectly Classified Instances        11               10.6796 %
+Kappa statistic                         -0.0442
+Mean absolute error                      0.1062
+Root mean squared error                  0.2926
+Relative absolute error                158.0706 %
+Root relative squared error            172.7679 %
+Total Number of Instances              103     
+
+package GameBoardGUI: Expected: 0.0 - Predicted: 0
+package GameBoardCtrl: Expected: 0.0 - Predicted: 0
+package GameMgr: Expected: 0.0 - Predicted: 0
+package GameBoardMgr: Expected: 0.0 - Predicted: 0
+package GameCtrl: Expected: 0.0 - Predicted: 0
+package PlayGameGUI: Expected: 0.0 - Predicted: 0
+package GameGUI: Expected: 0.0 - Predicted: 0
+package InitializeMgr: Expected: 0.0 - Predicted: 0
+package AnimationLoopMgr: Expected: 0.0 - Predicted: 0
+klass AnimationLoppMgr: Expected: 0.0 - Predicted: 0
+klass Floor: Expected: 0.0 - Predicted: 0
+klass Score: Expected: 0.0 - Predicted: 0
+klass Game: Expected: 0.0 - Predicted: 0
+klass MovableSprites: Expected: 0.0 - Predicted: 0
+klass PongGame: Expected: 0.0 - Predicted: 0
+klass Sprit: Expected: 0.0 - Predicted: 0
+klass Player: Expected: 0.0 - Predicted: 0
+klass BrickPile: Expected: 0.0 - Predicted: 0
+klass GameGUI: Expected: 0.0 - Predicted: 0
+klass GameBoardMgr: Expected: 0.0 - Predicted: 0
+klass Match: Expected: 1.0 - Predicted: 1
+klass StationarySprite: Expected: 0.0 - Predicted: 0
+klass BricklesGame: Expected: 0.0 - Predicted: 0
+klass Puck: Expected: 0.0 - Predicted: 0
+klass Velocity: Expected: 1.0 - Predicted: 1
+klass GameBoard: Expected: 0.0 - Predicted: 0
+klass Wall: Expected: 0.0 - Predicted: 0
+klass GameBoardCtrl: Expected: 0.0 - Predicted: 0
+klass PlayGameGUI: Expected: 0.0 - Predicted: 0
+klass BowlingGame: Expected: 0.0 - Predicted: 0
+klass GameCtrl: Expected: 0.0 - Predicted: 0
+klass GameMgr: Expected: 0.0 - Predicted: 0
+klass Ceiling: Expected: 0.0 - Predicted: 0
+klass Paddle: Expected: 0.0 - Predicted: 0
+klass InitializeMgr: Expected: 0.0 - Predicted: 0
+klass Brick: Expected: 0.0 - Predicted: 0
+klass GameBoardGUI: Expected: 0.0 - Predicted: 0
+interface ICheckScore: Expected: 0.0 - Predicted: 0
+interface IGameMgt: Expected: 0.0 - Predicted: 0
+interface IUninstallgame: Expected: 0.0 - Predicted: 0
+interface IPlayBrickles: Expected: 0.0 - Predicted: 0
+interface IExitGame: Expected: 0.0 - Predicted: 0
+interface IGameBoardMgt: Expected: 0.0 - Predicted: 0
+interface IGameBoardData: Expected: 0.0 - Predicted: 0
+interface IAnimationLoopMgt: Expected: 0.0 - Predicted: 0
+interface IPlayPong: Expected: 0.0 - Predicted: 0
+interface ISaveGame: Expected: 0.0 - Predicted: 0
+interface IInstallGame: Expected: 0.0 - Predicted: 0
+interface IPlayBowling: Expected: 0.0 - Predicted: 0
+interface InitializationMgt: Expected: 0.0 - Predicted: 0
+interface ISaveScore: Expected: 0.0 - Predicted: 0
+package Package66Mgr: Expected: 0.0 - Predicted: 0
+package GameBoardGUI: Expected: 0.0 - Predicted: 0
+package GameBoardCtrl: Expected: 0.0 - Predicted: 0
+package GameMgr: Expected: 0.0 - Predicted: 0
+package GameBoardMgr: Expected: 0.0 - Predicted: 0
+package GameCtrl: Expected: 0.0 - Predicted: 0
+package PlayGameGUI: Expected: 0.0 - Predicted: 0
+package GameGUI: Expected: 0.0 - Predicted: 0
+package InitializeMgr: Expected: 0.0 - Predicted: 0
+package AnimationLoopMgr: Expected: 0.0 - Predicted: 0
+klass AnimationLoppMgr: Expected: 0.0 - Predicted: 0
+klass Floor: Expected: 0.0 - Predicted: 0
+klass Score: Expected: 0.0 - Predicted: 0
+klass MovableSprites: Expected: 0.0 - Predicted: 0
+klass Sprit: Expected: 0.0 - Predicted: 0
+klass BowlingGame: Expected: 0.0 - Predicted: 0
+klass Player: Expected: 0.0 - Predicted: 0
+klass BrickPile: Expected: 0.0 - Predicted: 0
+klass GameGUI: Expected: 0.0 - Predicted: 0
+klass GameBoardMgr: Expected: 0.0 - Predicted: 0
+klass Match: Expected: 0.0 - Predicted: 0
+klass StationarySprite: Expected: 0.0 - Predicted: 0
+klass PongGame: Expected: 0.0 - Predicted: 0
+klass Puck: Expected: 0.0 - Predicted: 0
+klass Velocity: Expected: 1.0 - Predicted: 1
+klass GameBoard: Expected: 0.0 - Predicted: 0
+klass Wall: Expected: 0.0 - Predicted: 0
+klass GameBoardCtrl: Expected: 0.0 - Predicted: 0
+klass PlayGameGUI: Expected: 0.0 - Predicted: 0
+klass GameCtrl: Expected: 0.0 - Predicted: 0
+klass GameMgr: Expected: 0.0 - Predicted: 0
+klass BricklesGame: Expected: 0.0 - Predicted: 0
+klass Ceiling: Expected: 0.0 - Predicted: 0
+klass Paddle: Expected: 0.0 - Predicted: 0
+klass InitializeMgr: Expected: 0.0 - Predicted: 0
+klass Brick: Expected: 0.0 - Predicted: 0
+klass GameBoardGUI: Expected: 0.0 - Predicted: 0
+klass Game: Expected: 0.0 - Predicted: 0
+interface ICheckScore: Expected: 0.0 - Predicted: 0
+interface IGameMgt: Expected: 0.0 - Predicted: 0
+interface IUninstallgame: Expected: 0.0 - Predicted: 0
+interface IPlayBrickles: Expected: 0.0 - Predicted: 0
+interface IExitGame: Expected: 0.0 - Predicted: 0
+interface IGameBoardMgt: Expected: 0.0 - Predicted: 0
+interface IGameBoardData: Expected: 0.0 - Predicted: 0
+interface IAnimationLoopMgt: Expected: 0.0 - Predicted: 0
+interface IPlayPong: Expected: 0.0 - Predicted: 0
+interface ISaveGame: Expected: 0.0 - Predicted: 0
+interface IInstallGame: Expected: 0.0 - Predicted: 0
+interface IPlayBowling: Expected: 0.0 - Predicted: 0
+interface InitializationMgt: Expected: 0.0 - Predicted: 0
+interface ISaveScore: Expected: 0.0 - Predicted: 0
